@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  color: #2199df;
+  text-decoration: none;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style-type: none;
+}
+
+button,
+input[type="submit"] {
+  border: none;
+  background: none;
+  color: unset;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 1em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Header */
+
+#header {
+  height: 50px;
+  display: flex;
+  background-color: rgb(84, 175, 218);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 1rem;
+  color: white;
+}
+
+#header .navigation-buttons {
+  height: 100%;
+  display: flex;
+}
+
+#header .navigation-buttons button {
+  background-color: rgb(95, 217, 238);
+  padding: 0 1rem;
+  color: white;
+  font-size: 1, 1rem;
+}
+
+#header .navigation-buttons button:hover {
+  background-color: rgb(28, 205, 236);
+}
+
+/* Form */
+.form input,
+.form label {
+  display: block;
+}
+
+.form input {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.form label {
+  margin-bottom: 0.2rem;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.3rem;
+  border: 1px solid lightgray;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+.form :focus {
+  border: 1px solid #268ee4;
+  box-shadow: inset 0px 0px 5px rgba(161, 189, 211, 0.5);
+  outline: none;
+}
+.form input[type="submit"] {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #1e5779;
+  background-color: #2885bb;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+/* Errors */
+
+.errors {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid #e02424;
+  background-color: #f11a1a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.errors button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(221, 157, 146);
+}
+.errors span {
+  color: white;
+}
+/* Responsive rules */
+
+@media screen and (max-width: 550px) {
+  #header .title {
+    font-size: 1rem;
+  }
+  #header .navigation-buttons button {
+    font-size: 0.9rem;
+    padding: 0 0.5;
+  }
+}
